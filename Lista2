@@ -1,0 +1,184 @@
+import java.until.Scanner;
+import java.until.Math;
+
+public class MaiorNumero{ //Exercício 1
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int numero1 = scan.nextInt();
+        println("Digite o primeiro Numero: " + numero1);
+        int numero2 = scan.nextInt();
+        println("Digite o segundo Numero: " + numero2);
+
+        if(numero1 > numero2){
+            System.out.println("Maior Numero: " + numero1);
+        } else if(numero2 > numero1) {
+            System.out.println("Maior Numero: " + numero2);
+        } else {
+            System.out.println("Os dois Números são Iguais!!!!");
+        }
+
+    }
+}
+
+
+
+public class NumeroPosNeg{ //Exercício 2
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        double numero = scan.nextDouble();
+        
+        if(numero > 0){
+            System.out.println("Numero Informado: " + numero);
+            System.out.println("O Número é positivo");
+        } else if (numero < 0){
+            System.out.println("Numero Informado: " + numero);
+            System.out.println("O Número é negativo");
+        } else {
+            System.out.println("Numero é Zero");
+        }
+
+
+    }
+}
+
+
+
+
+
+public class FemininoMasculino{ //Exercício 3
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        char letra = scan.nextChar();
+
+        System.out.println("Digite F ou f para Feminino OU M ou m para Masculino: " + letra);
+
+        if((letra == 'f') || (letra == 'F')){
+            System.out.println("Feminino");
+        } else if ((letra == 'm') || (letra == 'M')){
+            System.out.println("Masculino");
+        } else {
+            System.out.println("Sexo Invalido");
+        }
+
+    }
+}
+
+
+
+
+
+
+
+public class VogalConsoante{ //Exercício 4
+    public static void main(String [] args){
+        Scanner scan = new Scanner(System.in);
+        
+        char letra = scan.nextChar();
+        System.out.println("Digite uma Letra: " + letra);
+
+        if((letra == 'a') || (letra == 'e') || (letra == 'i') || (letra == 'o') || (letra == 'u')){
+            System.out.println("Vogal");
+        } else {
+            System.out.println("Consoante");
+        }
+    }
+}
+
+
+
+
+
+public class NotasParciais {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        double nota1 = scan.nextDouble();
+        System.out.println("Digite a nota 1: " + nota1);
+        double nota2 = scan.nextDouble();
+        System.out.println("Digite a nota 2: " + nota2);
+        
+        double media = (nota1 + nota2)/2;
+        System.out.println("Média: " + media);
+
+        if((media >= 6.0 && media <= 9.9)){
+            System.out.println("O Aluno está Aprovado!!!");
+        } else if (media == 10.0){
+            System.out.println("O Aluno está Aprovado com Distinção");
+        } else {
+            System.out.println("O Aluno está Reprovado!!!");
+        }
+    }
+}
+
+
+
+
+
+
+public class Numeros{ //Exercicio 6
+    public static void main(String [] args){
+        Scanner scan = new Scanner(System.in);
+
+        int numero_1 = scan.nextInt();
+        System.out.println("Digite o primeiro numero: " + numero_1);
+
+        int numero_2 = scan.nextInt();
+        System.out.println("Digite o segundo numero: " + numero_2);
+
+        int numero_3 = scan.nextInt();
+        System.out.println("Digite o terceiro numero: " + numero_3);
+
+
+        if((numero_1 > numero_2) && (numero_2>numero_3){
+            System.out.println("Numero Maior: " + numero_1);
+        } else if ((numero_2 > numero_1) && (numero_1>numero_3)){
+            System.out.println("Numero Maior: " + numero_2);            
+        } else if ((numero_3 > numero_2) && (numero_2>numero_1)){
+            System.out.println("Numero Maior: " + numero_3);            
+        } 
+    }
+}
+
+
+
+
+
+public class NumerosMenMai{ //Exercicio 7
+    public static void main(String [] args){
+        Scanner scan = new Scanner(System.in);
+
+        int numero_1 = scan.nextInt();
+        System.out.println("Digite o primeiro numero: " + numero_1);
+
+        int numero_2 = scan.nextInt();
+        System.out.println("Digite o segundo numero: " + numero_2);
+
+        int numero_3 = scan.nextInt();
+        System.out.println("Digite o terceiro numero: " + numero_3);
+
+
+        if((numero_1 > numero_2) && (numero_2>numero_3){
+            System.out.println("Numero Maior: " + numero_1);
+            System.out.println("Numero Menor: " + numero_3);
+        } else if ((numero_2 > numero_1) && (numero_1>numero_3)){
+            System.out.println("Numero Maior: " + numero_2);
+            System.out.println("Numero Menor: " + numero_3);            
+        } else if ((numero_3 > numero_2) && (numero_2>numero_1)){
+            System.out.println("Numero Maior: " + numero_3);
+            System.out.println("Numero Menor: " + numero_1);            
+        } else if ((numero_2 > numero_3) && (numero_3 > numero_1)){
+            System.out.println("Numero Maior: " + numero_2);
+            System.out.println("Numero Menor: " + numero_1);
+        } else if ((numero_1 > numero_2) && (numero1 > numero_3) && (numero_3>numero_2)){
+            System.out.println("Numero Maior: " + numero_1);
+            System.out.println("Numero Menor: " + numero_2);
+        } else if ((numero_3 > numero_2) && (numero1 > numero_2) && (numero_3>numero_1)){
+            System.out.println("Numero Maior: " + numero_3);
+            System.out.println("Numero Menor: " + numero_2);
+        }
+    }
+}
+
+
+
