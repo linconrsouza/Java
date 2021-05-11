@@ -1,0 +1,183 @@
+import java.until.Scanner;
+import java.lang.Math;
+
+
+public class OlaMundo{
+    public static void main(String[] args){
+        System.out.println("Alo Mundo");
+    }
+}
+
+
+public class Exercicio2{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Digite um numero: " );
+        int numero = scan.nextInt();
+        System.out.println("O numero informado foi: " + numero);
+
+    }
+}
+
+
+
+public class Exercicio3{
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Digite um numero: ");
+        int numero1 = scan.nextInt();
+        System.out.println("Digite um segundo numero: ");
+        int numero2 = scan.nextInt();
+        int soma = numero1 + numero2;
+
+        System.out.println("Valor Total: " + soma);
+    }
+}
+
+
+
+public class MediaSemestral{
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Digite a Primeira Nota: ");
+        double nota1 = scan.nextDouble();
+        System.out.println("Digite a Segunda Nota: ");
+        double nota2 = scan.nextDouble();
+        System.out.println("Digite a Terceira Nota: ");
+        double nota3 = scan.nextDouble();
+        System.out.println("Digite a Quarta Nota: ");
+        double nota4 = scan.nextDouble();
+
+        double media = (nota1+nota2+nota3+nota4)/4;
+
+        System.out.println("Media: " + media);
+
+    }
+}
+
+
+
+
+
+
+public class MetrosCentimetros{
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Digite o Metros que deseja: ");
+        double metros = scan.nextDouble();
+        double centimetros = metros * 100;
+
+        System.out.println("Centimetros Convertidos: " + centimetros);
+
+    }
+}
+
+
+
+
+public class AreaCirculos{
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        
+        double raio = scan.nextDouble();
+        double totalArea = Math.PI * (raio * raio);
+        System.out.println("Digite o valor do raio ");
+
+    }
+}
+
+
+
+
+public class HorasTrabalho{
+    public static void main (String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        double horas = scan.nextDouble();
+        System.out.println("Digite o número de horas trabalhadas durante o mes: " + horas);
+        double valor = scan.nextDouble();
+        System.out.println("Digite o valor por hora de trabalho em R$: " + valor);
+
+        double totalDinheiro = horas * valor;
+        System.out.println("Valor Total Trabalhado por mês: " + totalDinheiro);
+    }
+}
+
+
+public class TemperaturaFarenheit {
+    public static void main (String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        double farenheit = scan.nextDouble();
+        System.out.println("Digite a temperatura em Farenheit: " + farenheit);
+        double celsius = (5*(farenheit-32)/9);
+        System.out.println("Valor Total em Celsius: " + celsius);
+    }
+}
+
+
+
+
+
+public class TemperaturaCelsius{
+    public static void main (String[] args){
+        Scanner scan = new Scanner (System.in);
+    }
+}
+
+
+
+
+
+
+
+public class PesoIdeal{
+    public static void main (String[] args){
+        Scanner scan = new Scanner (System.in);
+
+        double altura = scan.nextDouble();
+        System.out.println("Digite a sua Altura: " + altura);
+        double pesoideal = ((72.8*altura)-58);
+        System.out.println("Seu peso ideal é: " + Pesoideal);
+    }
+}
+
+
+
+
+
+public class TotalSalario{
+    public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        
+        double valorHora = scan.nextDouble();
+        System.out.println("Digite o valor por hora: " + valorHora);
+        
+        double qtdHora = scan.nextDouble();
+        System.out.println("Digite a quantidade de horas trabalhadas por mês: " + qtdHora);
+        
+        double salarioTotal = valorHora * qtdHora;
+        
+        double desc_Inss = (salarioTotal - (salarioTotal * 0.92));
+        System.out.println("Valor Total descontado por INSS: " + desc_Inss);
+
+        double desc_Sindicato = (salarioTotal - (salarioTotal * 0.95));
+        System.out.println("Valor Total descontado do Sindicato: " + desc_Sindicato);
+
+        double desc_ImpostoRenda = (salarioTotal - (salarioTotal * 0.89));
+        System.out.println("Valor Total descontado por INSS: " + desc_ImpostoRenda);
+
+        double salarioFinal = salarioTotal - (desc_ImpostoRenda + desc_Inss + desc_Sindicato);
+
+        System.out.println("Salário Total Líquido: " + salarioFinal);
+
+
+    }
+
+
+}
+
